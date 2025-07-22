@@ -7,7 +7,7 @@ from reportlab_qrcode import QRCodeImage
 from reportlab.pdfgen import canvas
 
 ### config ###
-labelForm = 4778
+labelForm = 4731
 
 # mode "qr" prints a QR code and an ASN (archive serial number) text
 mode = "qr"
@@ -17,20 +17,20 @@ mode = "qr"
 #text="6y"
 
 # print multiple labels on a single cutout of a label sheet
-subLabelsX = 2
-subLabelsY = 2
+subLabelsX = 1
+subLabelsY = 1
 
 # prefix for the ASNs (make sure to also update your paperless config if you change this value)
-prefix = 'ASN'
+prefix = 'GAN'
 includePrefixInLabel = True
 # what was the first ASN number printed on this sheet
-firstASNOnSheet = 42
+firstASNOnSheet = 379
 # how many labels have already been printed on this sheet successfully
-labelsAlreadyPrinted = 20
+labelsAlreadyPrinted = 0
 # how many labels have been corrupted on this sheet because of misprints
-labelsCorrupted = 4
+labelsCorrupted = 0
 # how many labels should be printed now
-labelsToPrint = 18
+labelsToPrint = 189
 # set this to 3 if the top left corner of your labels is in the correct position but your top right corner is 3 mm too far down
 rotateOffset = -1*mm
 
